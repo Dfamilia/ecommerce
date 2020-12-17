@@ -1,7 +1,10 @@
+import React from 'react';
+import Homepage from './Homepage';
+
 function App() {
   return (
     <div>
-hello world
+       <Homepage />
     </div>
   );
 }
