@@ -1,12 +1,16 @@
-import React from 'react';
-import Homepage from './pages/homepage';
+/* eslint-disable react/jsx-filename-extension */
+import React from "react";
+import { Route, Switch } from "react-router-dom";
+import Homepage from "./pages/homepage";
 
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
     <div>
-       <Homepage />
+      <Switch>
+        <Route exact path="/" component={Homepage} />
+      </Switch>
     </div>
   );
 }
